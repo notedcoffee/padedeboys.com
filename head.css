@@ -1,0 +1,78 @@
+.header{
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.head-left{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+.head-center{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    align-items:center;
+    justify-content:center;
+    
+}
+
+.head-right{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+.head-center div{
+margin: 20px;
+    
+}
+
+.head-center ul{
+    list-style: none;
+    display: flex;
+}
+
+.head-center ul li {
+    padding: 10px 30px;
+    position: relative;
+}
+
+.head-center ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.dropdown-menu {
+    display: none;
+}
+
+.head-center ul li:hover .dropdown-menu {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+
+.dropdown-menu ul{
+    display:inline-block;
+    margin-left: 0px;
+   
+}
+
+.dropdown-menu ul li{
+    width: 120px;
+    padding: 5px;
+    
+}

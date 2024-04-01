@@ -1,0 +1,216 @@
+.bodycontent{
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: black;
+}
+
+
+.bodycenter{
+    border-style: none;
+    display: flex;
+    flex:1;
+    flex-direction: column;
+    color: white;
+}
+
+.bodycenter-top{
+    display: flex;
+    background-color: black;
+    color: white;
+    border-style: none;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    line-height: 30px;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.bodycenter-content img{
+    width: 100%;
+    height: 100%;
+}
+
+.bodyleft{
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    height: 800px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.bodyright{
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    height: 800px;
+    align-items: center;
+    justify-content: center;
+}
+
+.bodycenter-top nav{
+    position: relative;
+    height: 50px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bodycenter-top nav::after{
+    content: "";
+    background-color: silver;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    top: 80%;
+    filter: blur(0.5px);
+}
+
+.bodycenter-top nav label{
+    position:relative;
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+#coffee:checked ~ nav label .coffee,
+#brewed:checked ~ nav label .brewed,
+#non-coffee:checked ~ nav label .non-coffee,
+#sandwich:checked ~ nav label .sandwich {
+    color: rgb(157, 30, 220);
+
+}
+
+input[type='radio']{
+    display: none;
+}
+
+.bodycenter-top nav .slider{
+    position: absolute;
+    height: 4.5px;
+    background-color:rgb(157, 30, 220); 
+    border-radius: 20px;
+    width: 15%;
+    z-index: 1;
+    left: 3%;
+    bottom:10%;
+    transition: all 0.3s ease;
+    filter: blur(0.4px);
+}
+
+#frapp:checked ~ nav .slider{
+    left: 23%;
+}
+
+#brewed:checked ~ nav .slider{
+    left: 43%;
+}
+
+#non-coffee:checked ~ nav .slider{
+    left: 63%;
+}
+
+#sandwich:checked ~ nav .slider{
+    left: 83%;
+}
+
+section{
+    filter: blur(0.3px);
+    width: 80%;
+    display: flex;
+}
+
+section .content{
+    display: none;
+
+}
+
+section .content .title{
+    font-size: 51px;
+    font-weight: 600;
+}
+
+#coffee:checked ~ section .content-1, 
+#coffee:checked ~ section .content-2,
+#coffee:checked ~ section .content-4,
+#coffee:checked ~ section .content-5{ 
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-style: none;
+
+}
+
+#brewed:checked ~ section .content-3{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#frapp:checked ~ section .content-2{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#non-coffee:checked ~ section .content-4{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#sandwich:checked ~ section .content-5{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.thumbnail{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    border-style: none;
+    margin-bottom: 10px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-ingredients {
+    font-size: 12px;
+    line-height: 15px;
+    text-align: left;
+}
+.menu-photo {
+    width: 60px;
+}
+
+.caption {
+    line-height: 20px;;
+    color: white;
+    border-style: none;
+}
+
+.headcaption{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 0;
+    
+}
+
+.amount{
+    justify-content: center;
+    align-items: center;
+    display: grid;
+}
