@@ -20,7 +20,7 @@ body {
     body {
         background-image: url(images/Image1.jpg); 
         background-position: 1% 10%;
-        background-size:contain;
+        background-size: 100% 35%;
         background-repeat: no-repeat;
         
     }

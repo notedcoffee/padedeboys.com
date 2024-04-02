@@ -100,13 +100,22 @@ margin: 20px;
     }
 
     .head-center{
-        margin-top: 40%;
+        margin-top: 67%;
         flex-direction: column;
     }
 
     .head-center ul{
         flex-direction: column;
 
+    }
+
+    .head-center ul li a{
+        text-decoration: none;
+        color: white;
+        font-size: 30px;
+        font-family: "Barlow", sans-serif;
+        font-style: normal;
+        font-weight: 500;
     }
 
 }
