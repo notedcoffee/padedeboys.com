@@ -14,3 +14,16 @@ body {
     background-repeat: no-repeat;
     
 }
+
+@media (max-width: 600px) {
+
+    body {
+        background-image: url(images/Image1.jpg); 
+        background-position: 1% 10%;
+        background-size:contain;
+        background-repeat: no-repeat;
+        
+    }
+
+
+}
