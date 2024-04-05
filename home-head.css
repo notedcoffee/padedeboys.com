@@ -159,10 +159,17 @@ margin: 20px;
     font-family: "Barlow", sans-serif;
     font-style: normal;
     font-weight: 500;
-    padding: 20px 30px;
+    padding-left: 15px;
+    padding-bottom: 20px;
     height: auto;
     justify-content: flex-start;
 
+}
+
+.close-sidebar-button{
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 .open-sidebar-button, .close-sidebar-button{

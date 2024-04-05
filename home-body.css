@@ -78,6 +78,14 @@ body{
         width: 100%;
     }
 
+    .bodycenter-top{
+        background-image: url(images/Image1.jpg); 
+        background-size:contain;
+        background-repeat: no-repeat;
+        width: 500px;
+        height: 200px;
+    }
+
     .bodyleft{
         display: none;
     }
