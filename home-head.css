@@ -20,9 +20,10 @@
     color: white;
     display: flex;
     flex-direction: row;
-    flex: 1;
+    width: 100%;
     align-items:center;
-    justify-content:center;
+    justify-content: center;
+    background-color: rgba(99, 99, 99, 0.868);
     
     
 }
@@ -89,33 +90,96 @@ margin: 20px;
     
 }
 
+#sidebar-active{
+    display: none;
+}
+
+.open-sidebar-button, .close-sidebar-button{
+    display: none;
+}
+
+
 @media (max-width: 600px) {
 
-    .head-right{
-        width: 10px;
+    .head-left{
+        display: none;
     }
 
-    .head-left{
-        width: 10px;
+    .head-right{
+        display: none;
+    }
+
+    .header{
+        display: flex;
+        color:pink;
+        flex-direction: column;
+        align-items: last baseline;
+        padding-right: 20px;
+        border-style: none;
+        width: 100%;
+        background-color: pink;
     }
 
     .head-center{
-        margin-top: 67%;
-        flex-direction: column;
-    }
+        color: blue;
+        width: 300px;
+        border-style: none;
+        height: 100%;
+        position: fixed;
+        align-items: flex-start;
+        justify-content: flex-start;
+        top: 0;
+        right: -100%;
+        z-index: 10;
+        transition: 0.75s ease-out;
+}
 
-    .head-center ul{
-        flex-direction: column;
+.head-center ul li:hover .dropdown-menu {
+    display: none;
+}
 
-    }
+.head-center ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
 
-    .head-center ul li a{
-        text-decoration: none;
-        color: white;
-        font-size: 30px;
-        font-family: "Barlow", sans-serif;
-        font-style: normal;
-        font-weight: 500;
-    }
+.head-center ul li {
+    padding: 0;
+    display: flex;
+    width: 100%;
+}
+
+.head-center ul li a{
+    text-decoration: none;
+    box-sizing: border-box;
+    color: white;
+    font-size: 25px;
+    font-family: "Barlow", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    padding: 20px 30px;
+    height: auto;
+    justify-content: flex-start;
+
+}
+
+.open-sidebar-button, .close-sidebar-button{
+    display: block;
+}
+
+#sidebar-active:checked ~ .head-center{
+    right: 0;
+}
+
+#sidebar-active:checked ~ #overlay{
+    height: 100%;
+    width: 100%;
+    position:fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+
 
 }

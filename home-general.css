@@ -18,7 +18,8 @@ body {
 @media (max-width: 600px) {
 
     body {
-        background-image: url(images/Image1.jpg); 
+        
+        background-image: none;
         background-position: 1% 10%;
         background-size: 100% 35%;
         background-repeat: no-repeat;
