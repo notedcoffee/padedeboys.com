@@ -108,4 +108,25 @@ body{
 
     }
 
+    .fa-instagram, .fa-facebook, .fa-envelope, .fa-phone{
+        font-size: 15px;
+        color: pink;
+        margin-left: 10px;
+    }
+
+    footer a{
+        color: pink;
+        font-size: 10px;
+        margin-left: 5px;
+    }
+
+    .foot-top, .foot-low{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+
+
 }
