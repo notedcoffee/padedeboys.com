@@ -81,8 +81,9 @@
     padding: 0;
     text-align: center;
     cursor: pointer;
-    font-size: 15px;
+    font-size: 14px;
     transition: all 0.3s ease;
+    font-family: "Barlow", sans-serif;
 }
 
 #coffee:checked ~ nav label .coffee,
@@ -150,6 +151,7 @@ section .content .title{
     flex-direction: column;
     width: 100%;
     border-style: none;
+    font-family: "Barlow", sans-serif;
 
 }
 
@@ -179,9 +181,9 @@ section .content .title{
 
 .thumbnail{
     display: grid;
-    grid-template-columns: 20% 70% 20%;
+    grid-template-columns: 20% 60% 35%;
     border-style: none;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     margin-left: 0;
     padding: 0;
     width: 100%;
@@ -258,5 +260,15 @@ section .content .title{
         line-height: 20px;;
         color: white;
         border-style: none;
+    }
+
+    .headcaption{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 1px;
+        padding-bottom: 0;
+        font-family: "Barlow", sans-serif;
+        
     }
 }
