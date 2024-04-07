@@ -266,9 +266,17 @@ section .content .title{
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-top: 1px;
+        padding-top: 0;
         padding-bottom: 0;
+
+        margin-bottom: 30px;
         font-family: "Barlow", sans-serif;
+        font-size: 20px;
+        border-style: solid;
+        border-radius: 10px;
+        background-color: rgba(196, 195, 195, 0.546);
+        color: black;
+
         
     }
 }
