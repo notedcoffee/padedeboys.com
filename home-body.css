@@ -68,6 +68,11 @@ body{
 
 @media (max-width: 600px){
 
+    body{
+        background-color: black;
+        padding-bottom: 50px;
+        height: 100vh;
+    }
     .bodycontent{
         height: 100%;
         display: flex;
