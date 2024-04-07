@@ -177,9 +177,10 @@ section .content .title{
 
 .thumbnail{
     display: grid;
-    grid-template-columns: 20% 60% 20%;
+    grid-template-columns: 30% 40% 30%;
     border-style: none;
     margin-bottom: 10px;
+    padding: 0;
     width: 100%;
     align-items: center;
     justify-content: center;
@@ -213,4 +214,24 @@ section .content .title{
     justify-content: center;
     align-items: center;
     display: grid;
+}
+
+@media (max-width: 600px) {
+    .bodyleft{
+        display: none;
+    }
+
+    .bodyright{
+        display: none;
+    }
+
+    .bodycenter{
+        padding:0;
+        margin: 0;
+    }
+
+    .bodycenter-top{
+        padding:0;
+        margin: 0;
+    }
 }

@@ -5,27 +5,40 @@
     <link rel="stylesheet" href="menutab-head.css">
     <link rel="stylesheet" href="menutab-body.css">
     <link rel="stylesheet" href="menutab-general.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
 
    
 <body>
 <div class="header">
+    <p class="notedlogo">Noted Coffee</p>
 
     <div class="head-left">
         <div>Left</div>
     </div>
 
+    <input type="checkbox" id="sidebar-active">
+    <label for="sidebar-active" class="open-sidebar-button">
+        <svg style="fill:white" xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+    </label>
+    <label id="overlay" for="sidebar-active">
+    </label>
+
     <div class="head-center">
+        <nav>
+            <label for="sidebar-active" class="close-sidebar-button">
+                <svg style="fill:white" xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+            </label>
         <ul>
             <li> <a href="index.html">Home</a></li>
-            <li> <a href="menu.html">Menu</a>
+            <li> <a href="menutab-sample.html">Menu</a>
                 <div class="dropdown-menu">
                     <ul>
-                        <li ><a href="#">Coffee Pudong</a></li>
-                        <li><a href="#">Tae ni Pudong</a></li>
-                        <li><a href="#">Baho ni Pudong</a></li>
-                        <li><a href="#">Asan na si Pudong?</a></li>
+                        <li ><a href="menu/frapp.html">Frappuccino</a></li>
+                        <li><a href="menu/brewed.html">Brewed</a></li>
+                        <li><a href="menu/non-coffee.html">Non-Coffee</a></li>
+                        <li><a href="menu/sandwich.html">Sandwich</a></li>
                     </ul>
                 </div>
             </li>
@@ -33,6 +46,7 @@
             <li> <a href="#">Contact</a></li>
             <li> <a href="about.html">About Us</a></li>
         </ul>
+    </nav>
     </div>
 
     <div class="head-right">
